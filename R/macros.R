@@ -44,6 +44,8 @@ grouped_mean <- function(data, groupVars, var) {
 "patient_sample"
 
 
+#' Generate bootstrap samples
+#'
 #' Generate bootstrap samples based on the probabilistic distribution of attributes of different treatments provided in the dca_samples data
 #'
 #' @param dce_samples samples of probabilistic distribution for the different treatments' attributes. The dataset needs to have the following columns:
@@ -162,6 +164,9 @@ dce_bootstrap <- function(dce_samples,
 #                            ecost3 - ecost4")
 
 
+#' Generate the bootstrap samples amd fit a conditional logit model
+#'
+#'
 #' Generate the bootstrap samples of attributes of different treatments, fit a conditional logit model on the patient data, and estimate effect of each covariates on the outcomes. The function provides SE of the effect estimates that are based on two uncertanities: 1. uncertanity of using sample of patients (not population), and 2. uncertanity in attributes of different treatments.
 #'
 #' @param original_data patient data, which need to include the folowing columns: id (patient id), response (a binary outcome), and covariates. See patient_sample data provided in the package for an example of this argument
