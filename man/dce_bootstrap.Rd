@@ -2,7 +2,7 @@
 % Please edit documentation in R/macros.R
 \name{dce_bootstrap}
 \alias{dce_bootstrap}
-\title{Generate bootstrap samples based on the probabilistic distribution of attributes of different treatments provided in the dca_samples data}
+\title{Generate bootstrap samples}
 \usage{
 dce_bootstrap(dce_samples, boot_n, na_zero = FALSE, seed = NULL)
 }

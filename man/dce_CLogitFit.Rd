@@ -2,7 +2,7 @@
 % Please edit documentation in R/macros.R
 \name{dce_CLogitFit}
 \alias{dce_CLogitFit}
-\title{Generate the bootstrap samples of attributes of different treatments, fit a conditional logit model on the patient data, and estimate effect of each covariates on the outcomes. The function provides SE of the effect estimates that are based on two uncertanities: 1. uncertanity of using sample of patients (not population), and 2. uncertanity in attributes of different treatments.}
+\title{Generate the bootstrap samples amd fit a conditional logit model}
 \usage{
 dce_CLogitFit(
   original_data,
