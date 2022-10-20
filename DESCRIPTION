@@ -1,0 +1,22 @@
+Package: dceAnalyzer
+Title: Conditional Logit Model For Discrete Choice Experiment Data
+Version: 0.0.0.9000
+Authors@R: 
+    person("Abdollah", "Safari", , "a.saffari72@gmail.com", role = c("aut", "cre"),
+           comment = c(ORCID = "YOUR-ORCID-ID"))
+Description: The dceAnalyzer package fits a conditional logit model on discrete choice experiment (DCE) data with a binary outcome. To account for both sources of uncertainties in DCE data, the package allows to generate bootstrap samples from the DCE samples, and then, estimate the SE of the effect estimates based on both sources of uncertainties (uncertainty from the patient samples and from DCE samples).
+License: GPL-3
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.2.1
+Depends: 
+    R (>= 2.10)
+LazyData: true
+Imports:
+    stats,
+    magrittr,
+    dplyr,
+    survival,
+    MASS,
+    survey,
+    rlang
